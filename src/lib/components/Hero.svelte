@@ -1,7 +1,5 @@
 <script lang="ts">
 	import constants from '$lib/constants';
-
-	const BOTTOM_PADDING = '64';
 </script>
 
 <div
