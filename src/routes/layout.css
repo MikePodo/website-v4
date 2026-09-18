@@ -1,1 +1,22 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji';
+	--font-serif: 'Instrument Serif', ui-serif, serif, 'Apple Color Emoji';
+
+	--color-gray-100: #ede2d9;
+	--color-gray-200: #c4b5a8;
+	--color-gray-300: #9c9084;
+	--color-gray-400: #6f6a5f;
+	--color-surface: #0f1410;
+	--color-surface-accent: #2a3227;
+	--color-surface-light: #3a4436;
+}
+
+@utility gutter {
+	@apply px-4 md:px-6 lg:px-16 2xl:px-32;
+}
+
+@utility hr {
+	@apply mx-4 h-px min-h-px w-auto bg-surface-accent md:mx-6 lg:mx-16 2xl:mx-32;
+}
