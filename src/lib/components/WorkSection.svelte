@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="flex flex-col">
-			{#each work.sections as section, i}
+			{#each work.sections as section, i (section.title)}
 				{#if i > 0}
 					<div class="my-12 h-px bg-surface-accent"></div>
 				{/if}
@@ -32,7 +32,7 @@
 					{#if section.stats?.length}
 						<div class="h-px bg-surface-accent"></div>
 						<div class="flex flex-wrap gap-x-16 gap-y-8">
-							{#each section.stats as stat}
+							{#each section.stats as stat (stat.label)}
 								<div class="flex flex-col gap-2">
 									<p class="font-serif text-5xl leading-none">{stat.value}</p>
 									<p class="text-sm text-gray-300">{stat.label}</p>
@@ -44,7 +44,7 @@
 
 					{#if section.highlights?.length}
 						<div class="grid gap-x-16 gap-y-10 pt-2 md:grid-cols-2">
-							{#each section.highlights as highlight}
+							{#each section.highlights as highlight (highlight.title)}
 								<div class="flex flex-col gap-3">
 									<h4 class="font-serif text-xl leading-none">{highlight.title}</h4>
 									<p class="leading-relaxed text-gray-300">{highlight.description}</p>

@@ -6,7 +6,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<div class="flex min-h-screen w-full flex-col overflow-x-hidden">
+<main class="flex min-h-screen w-full flex-col overflow-x-hidden">
 	<Vanta />
 	<Hero />
 	<div class="hr"></div>
@@ -14,4 +14,4 @@
 	<Background />
 	<div class="hr"></div>
 	<Footer />
-</div>
+</main>

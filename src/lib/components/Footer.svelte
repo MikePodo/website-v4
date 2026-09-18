@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import constants from '$lib/constants';
 
 	const AVAILABILITY = 'Open to full-time roles starting January 2027';
@@ -7,7 +8,7 @@
 		{ label: 'Email', href: `mailto:${constants.EMAIL}` },
 		{ label: 'GitHub', href: constants.GITHUB_URL },
 		{ label: 'LinkedIn', href: constants.LINKEDIN_URL },
-		{ label: 'Resume', href: '/resume' }
+		{ label: 'Resume', href: resolve('/resume') }
 	];
 </script>
 
@@ -21,6 +22,8 @@
 
 	<div class="flex flex-col items-start gap-3 lg:items-end">
 		{#each LINKS as link (link.href)}
+			<!-- External URLs plus an already-resolve()d route; the rule can't see through the array. -->
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={link.href} target="_blank" rel="noopener" class="group relative leading-loose">
 				{link.label}
 				<div
