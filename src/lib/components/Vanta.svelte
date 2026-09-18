@@ -7,7 +7,7 @@
 		resize(): void;
 	}
 
-	const OPACITY = 0.3;
+	const OPACITY = 0.4;
 
 	let container: HTMLDivElement;
 
@@ -44,7 +44,7 @@
 				points: 15,
 				maxDistance: 20,
 				spacing: mobile.matches ? 24 : 16,
-				showDots: true
+				showDots: false
 			});
 		};
 

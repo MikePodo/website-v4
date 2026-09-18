@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex w-full flex-col overflow-hidden lg:min-h-[calc(100vh-64px)] xl:max-h-[calc(100vh-64px)]"
+	class="flex w-full flex-col overflow-hidden lg:min-h-[calc(100vh-32px)] xl:max-h-[calc(100vh-32px)]"
 >
 	<div
 		class="flex min-h-0 flex-1 flex-col-reverse items-stretch justify-between lg:flex-col xl:flex-row"
@@ -17,31 +17,24 @@
 			</div>
 			<div class="flex flex-col gap-6">
 				<p class="text-xl text-gray-200 md:max-w-3/4">
-					Four years building consumer products end to end at West Co. — architecture, interface,
-					native apps, and the AI systems underneath.
+					Software, built with care, end to end. Consumer apps, internal platforms, and the AI
+					systems underneath them.
 				</p>
 				<div class="flex items-center gap-6 md:gap-8">
+					<a href="#work" class="group relative leading-loose">
+						Work
+						<div
+							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
+						></div>
+					</a>
+					<a href="#background" class="group relative leading-loose">
+						Background
+						<div
+							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
+						></div>
+					</a>
 					<a href="mailto:{constants.EMAIL}" target="_blank" class="group relative leading-loose">
 						Email
-						<div
-							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
-						></div>
-					</a>
-					<a href={constants.GITHUB_URL} target="_blank" class="group relative leading-loose">
-						GitHub
-						<div
-							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
-						></div>
-					</a>
-					<a href={constants.LINKEDIN_URL} target="_blank" class="group relative leading-loose">
-						LinkedIn
-						<div
-							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
-						></div>
-					</a>
-
-					<a href="/resume" target="_blank" class="group relative leading-loose">
-						Resume
 						<div
 							class="absolute right-0 bottom-0 left-0 h-px bg-surface-accent transition-colors group-hover:bg-gray-200"
 						></div>
