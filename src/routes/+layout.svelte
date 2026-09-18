@@ -1,11 +1,14 @@
 <script lang="ts">
 	import './layout.css';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { dev } from '$app/environment';
 	import { page } from '$app/state';
 	import favicon from '$lib/assets/favicon.svg';
 	import constants from '$lib/constants';
 
 	let { children } = $props();
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
 	const origin = $derived(dev ? page.url.origin : constants.SITE_URL);
 	const canonical = $derived(new URL(page.url.pathname, origin).href);

@@ -36,6 +36,7 @@
 		"vite": "^8.0.16"
 	},
 	"dependencies": {
+		"@vercel/analytics": "^2.0.1",
 		"three": "^0.134.0",
 		"vanta": "^0.5.24"
 	}
